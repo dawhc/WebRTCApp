@@ -1,0 +1,24 @@
+div#mainv-div {
+    margin: 0 auto;
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+video#video-main {
+    width: 800px;
+    height: 600px;
+}
+video#video-sub {
+    width: 240px;
+    height: 180px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+div#remotev-div video {
+    width: 360px;
+    height: 270px;
+}
+div#btns {
+    text-align: center;
+}

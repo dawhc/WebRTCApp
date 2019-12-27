@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title Login
+        meta(charset="utf-8")
+    body
+        p #{log}
+        form(action='/api/login' method='POST')
+            div.login
+                p Username
+                input.username(name='username')
+                p Password
+                input.password(name='password' type='password')
+                p
+                input(name='redirectURL', type='hidden', value='#{redirectURL}')
+                button#submit(type='submit') login
+                button#register(onclick='location.href="register";') register
+

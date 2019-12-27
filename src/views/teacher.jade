@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title WebRTC Test
+        meta(charset="utf-8")
+        link(rel="stylesheet", href="style.css")
+        script(type='text/javascript').
+            var username = '#{username}';
+            var roomId = '#{roomId}';
+            var SERVER_SOCKET_URL = '#{socketURL}';
+    body
+        p Welcome, teacher #{username}!
+        div#mainv-div
+            video(id="video-main", autoplay, controls)
+            video(id="video-sub", autoplay)
+        div#remotev-div
+        div#btns
+            button#btn-start Start
+            button#btn-switch Switch
+            button#btn-leave Leave
+
+script(src="client.js")
+script(src="client_teacher.js")
